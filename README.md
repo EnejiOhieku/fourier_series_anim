@@ -4,6 +4,8 @@ This project is a Python application that provides a visual demonstration of the
 
 This was built to practicalize concepts learned in an Engineering Mathematics course, specifically showing how a complex periodic function (a drawing) can be decomposed into a sum of simple sinusoids.
 
+## Demo
+[](https://github.com/user-attachments/assets/193d21f7-b6fb-4eab-853c-7600d56383f5)
 ## How It Works
 
 The core of the project is the Fourier series, which in its complex form can be expressed as:
@@ -14,7 +16,7 @@ The process is broken down into two main parts: analysis and synthesis.
 
 ### 1. Analysis (Calculating Coefficients)
 
-The program first analyzes the input drawing to calculate the Fourier coefficients (`c_n`).
+The program first analyzes the input drawiing to calculate the Fourier coefficients (`c_n`).
 
 *   The input drawing from `vector_img.py` is treated as a path of complex numbers `f(t) = x(t) + iy(t)`.
 *   The `get_coef(n)` method in `main.py` calculates the *n*-th coefficient by performing a Discrete Fourier Transform (DFT). This is a numerical approximation of the integral:
