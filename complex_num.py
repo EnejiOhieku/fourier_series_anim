@@ -61,6 +61,9 @@ class Z:
         magnitude = self.magnitude * z.magnitude
         direction = self.direction + z.direction
         return Z.polar(magnitude, direction)
+    
+    def __rmul__(self, z):
+        return self.__mul__(z)
 
     def __truediv__(self, z):
         magnitude = self.magnitude / z.magnitude

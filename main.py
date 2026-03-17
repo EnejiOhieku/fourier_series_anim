@@ -33,7 +33,8 @@ class MainApp:
     
     def get_coefs(self):
         c = {}
-        for i in range(self.n):
+        c[0] = self.get_coef(0)
+        for i in range(1, self.n):
             c[i] = self.get_coef(i)
             c[-i] = self.get_coef(-i)
         return c
